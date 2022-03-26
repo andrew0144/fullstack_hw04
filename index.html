@@ -17,6 +17,13 @@
             }
             label {
                 font-weight: bold;
+                margin: 10px 10px 0px 0px;
+            }
+            input{
+                width: 400px;
+            }
+            h1{
+                color: red;
             }
         </style>
     </head>
@@ -25,12 +32,15 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <form style="display: block;">
+            <h1>Input Types:</h1>
             <label for="textInput">Text:</label>
             <input id="textInput" type="text" placeholder="Type text.." >
             <label for="numberInput">Number:</label>
             <input id="numberInput" type="number" placeholder="Type number.." >
             <label for="dateInput">Date:</label>
-            <input id="dateInput" type="date" placeholder="mm/dd/yyyy" >
+            <input id="dateInput" type="date">
+            <label for="colorInput">Color:</label>
+            <input id="colorInput" type="color">
         </form>
         <script src="" async defer></script>
     </body>
