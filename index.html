@@ -12,6 +12,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
             label, input {
                 display: block;
             }
@@ -19,11 +22,22 @@
                 font-weight: bold;
                 margin: 10px 10px 0px 0px;
             }
-            input{
+            #input-section input{
                 width: 400px;
             }
             h1{
                 color: red;
+                margin-bottom: 10px;
+            }
+            #checkboxes-section input, #checkboxes-section label, #radios-section input, #radios-section label{
+                display: inline;
+                margin: 0;
+            }
+            #checkboxes-section label{
+                margin: 0;
+            }
+            hr {
+                margin-top: 30px;
             }
         </style>
     </head>
@@ -58,7 +72,26 @@
                 <input id="rangeInput" type="range">
                 <hr>
             </div>
-            
+            <div id="checkboxes-section">
+                <h1>Checkboxes:</h1>
+                <input type="checkbox" id="checkbox01" name = "checkbox01" value="checkbox01">
+                <label for="checkbox01">Checkbox01</label>
+                <input type="checkbox" id="checkbox02" name = "checkbox02" value="checkbox02">
+                <label for="checkbox02">Checkbox02</label>
+                <input type="checkbox" id="checkbox03" name = "checkbox03" value="checkbox03">
+                <label for="checkbox03">Checkbox03</label>
+                <hr>
+            </div>
+            <div id="radios-section">
+                <h1>Radios:</h1>
+                <input type="radio" id="radio01" name = "radio01" value="radio01">
+                <label for="radio01">Radio01</label>
+                <input type="radio" id="radio02" name = "radio02" value="radio02">
+                <label for="radio02">Radio02</label>
+                <input type="radio" id="radio03" name = "radio03" value="radio03">
+                <label for="radio03">Radio03</label>
+                <hr>
+            </div>
         </form>
         <script src="" async defer></script>
     </body>
