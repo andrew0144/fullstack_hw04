@@ -22,7 +22,7 @@
                 font-weight: bold;
                 margin: 10px 10px 0px 0px;
             }
-            #input-section input{
+            #input-section input, select{
                 width: 400px;
             }
             h1{
@@ -84,12 +84,33 @@
             </div>
             <div id="radios-section">
                 <h1>Radios:</h1>
-                <input type="radio" id="radio01" name = "radio01" value="radio01">
+                <input type="radio" id="radio01" name = "radios-section" value="radio01">
                 <label for="radio01">Radio01</label>
-                <input type="radio" id="radio02" name = "radio02" value="radio02">
+                <input type="radio" id="radio02" name = "radios-section" value="radio02">
                 <label for="radio02">Radio02</label>
-                <input type="radio" id="radio03" name = "radio03" value="radio03">
+                <input type="radio" id="radio03" name = "radios-section" value="radio03">
                 <label for="radio03">Radio03</label>
+                <hr>
+            </div>
+            <div id="dropdowns-section">
+                <h1>Dropdowns:</h1>
+                <select name="dropdowns-section">
+                    <option value="default" selected disabled hidden>Default...</option>
+                    <option value ="html">html</option>                    
+                    <option value ="css">css</option>
+                    <option value ="javascript">javascript</option>
+                </select>
+                <hr>
+            </div>
+            <div id="autocompletes-section">
+                <h1>Auto-Completes:</h1>
+                <input list = "operating-systems" name="os" id="os" placeholder = "Type item...">
+                <datalist id="operating-systems">
+                    <option value = "Linux"></option>
+                    <option value = "macOS"></option>
+                    <option value="Microsoft Windows"></option>
+                    <option value="iOS"></option>
+                </datalist>
                 <hr>
             </div>
         </form>
