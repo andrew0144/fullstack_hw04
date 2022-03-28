@@ -11,6 +11,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             body{
                 font-family: Arial, Helvetica, sans-serif;
@@ -22,8 +23,11 @@
                 font-weight: bold;
                 margin: 10px 10px 0px 0px;
             }
-            #input-section input, select{
+            #input-section input, select, textarea{
                 width: 400px;
+            }
+            textarea {
+                height: 40px;
             }
             h1{
                 color: red;
@@ -112,6 +116,15 @@
                     <option value="iOS"></option>
                 </datalist>
                 <hr>
+            </div>
+            <div id="textareas-section">
+                <h1>Textareas:</h1>
+                <textarea id="txt-area" placeholder="Type text here..."></textarea>
+                <hr>
+            </div>
+            <div id="buttons-section">
+                <h1>Buttons:</h1>
+                <button type="button"><i class="fa fa-pencil"></i> Button01</button>
             </div>
         </form>
         <script src="" async defer></script>
