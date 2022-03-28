@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'> 
         <script type="text/javascript" src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js'></script>
         <style>
             body{
@@ -25,14 +25,15 @@
                 font-weight: bold;
                 margin: 10px 10px 0px 0px;
             }
-            #input-section input, select, textarea{
+            #input-section input, select, textarea, #os{
                 width: 400px;
             }
             textarea {
-                height: 40px;
+                height: 50px;
             }
             h1{
                 color: red;
+                font-weight: bold;
                 margin-bottom: 10px;
             }
             #checkboxes-section input, #checkboxes-section label, #radios-section input, #radios-section label{
@@ -45,6 +46,16 @@
             hr {
                 margin-top: 30px;
             }
+            #first-section {
+                padding: 20px;
+            }
+            #second-section {
+                margin-top: 20px;
+                padding: 20px;
+                font-weight: bold;
+            }
+
+            
         </style>
     </head>
     <body>
@@ -52,83 +63,165 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <form style="display: block;">
-            <div id="input-section">
-                <h1>Input Types:</h1>
-                <label for="textInput">Text:</label>
-                <input id="textInput" type="text" placeholder="Type text.." >
-                <label for="numberInput">Number:</label>
-                <input id="numberInput" type="number" placeholder="Type number.." >
-                <label for="dateInput">Date:</label>
-                <input id="dateInput" type="date">
-                <label for="colorInput">Color:</label>
-                <input id="colorInput" type="color">
-                <label for="timeInput">Time:</label>
-                <input id="timeInput" type="time">
-                <label for="weekInput">Week:</label>
-                <input id="weekInput" type="week">
-                <label for="monthInput">Month:</label>
-                <input id="monthInput" type="month">
-                <label for="datetimeInput">Date Time:</label>
-                <input id="datetimeInput" type="datetime-local">
-                <label for="fileInput">File:</label>
-                <input id="fileInput" type="file">
-                <label for="passwordInput">Password:</label>
-                <input id="passwordInput" type="password">
-                <label for="rangeInput">Range:</label>
-                <input id="rangeInput" type="range">
-                <hr>
-            </div>
-            <div id="checkboxes-section">
-                <h1>Checkboxes:</h1>
-                <input type="checkbox" id="checkbox01" name = "checkbox01" value="checkbox01">
-                <label for="checkbox01">Checkbox01</label>
-                <input type="checkbox" id="checkbox02" name = "checkbox02" value="checkbox02">
-                <label for="checkbox02">Checkbox02</label>
-                <input type="checkbox" id="checkbox03" name = "checkbox03" value="checkbox03">
-                <label for="checkbox03">Checkbox03</label>
-                <hr>
-            </div>
-            <div id="radios-section">
-                <h1>Radios:</h1>
-                <input type="radio" id="radio01" name = "radios-section" value="radio01">
-                <label for="radio01">Radio01</label>
-                <input type="radio" id="radio02" name = "radios-section" value="radio02">
-                <label for="radio02">Radio02</label>
-                <input type="radio" id="radio03" name = "radios-section" value="radio03">
-                <label for="radio03">Radio03</label>
-                <hr>
-            </div>
-            <div id="dropdowns-section">
-                <h1>Dropdowns:</h1>
-                <select name="dropdowns-section">
-                    <option value="default" selected disabled hidden>Default...</option>
-                    <option value ="html">html</option>                    
-                    <option value ="css">css</option>
-                    <option value ="javascript">javascript</option>
-                </select>
-                <hr>
-            </div>
-            <div id="autocompletes-section">
-                <h1>Auto-Completes:</h1>
-                <input list = "operating-systems" name="os" id="os" placeholder = "Type item...">
-                <datalist id="operating-systems">
-                    <option value = "Linux"></option>
-                    <option value = "macOS"></option>
-                    <option value="Microsoft Windows"></option>
-                    <option value="iOS"></option>
-                </datalist>
-                <hr>
-            </div>
-            <div id="textareas-section">
-                <h1>Textareas:</h1>
-                <textarea id="txt-area" placeholder="Type text here..."></textarea>
-                <hr>
-            </div>
-            <div id="buttons-section">
-                <h1>Buttons:</h1>
-                <button type="button"><i class="fa fa-pencil"></i> Button01</button>
+            <div id="first-section">
+                <div id="input-section">
+                    <h1>Input Types:</h1>
+                    <label for="textInput">Text:</label>
+                    <input id="textInput" type="text" placeholder="Type text.." >
+                    <label for="numberInput">Number:</label>
+                    <input id="numberInput" type="number" placeholder="Type number.." >
+                    <label for="dateInput">Date:</label>
+                    <input id="dateInput" type="date">
+                    <label for="colorInput">Color:</label>
+                    <input id="colorInput" type="color">
+                    <label for="timeInput">Time:</label>
+                    <input id="timeInput" type="time">
+                    <label for="weekInput">Week:</label>
+                    <input id="weekInput" type="week">
+                    <label for="monthInput">Month:</label>
+                    <input id="monthInput" type="month">
+                    <label for="datetimeInput">Date Time:</label>
+                    <input id="datetimeInput" type="datetime-local">
+                    <label for="fileInput">File:</label>
+                    <input id="fileInput" type="file">
+                    <label for="passwordInput">Password:</label>
+                    <input id="passwordInput" type="password">
+                    <label for="rangeInput">Range:</label>
+                    <input id="rangeInput" type="range">
+                    <hr>
+                </div>
+                <div id="checkboxes-section">
+                    <h1>Checkboxes:</h1>
+                    <input type="checkbox" id="checkbox01" name = "checkbox01" value="checkbox01">
+                    <label for="checkbox01">Checkbox01</label>
+                    <input type="checkbox" id="checkbox02" name = "checkbox02" value="checkbox02">
+                    <label for="checkbox02">Checkbox02</label>
+                    <input type="checkbox" id="checkbox03" name = "checkbox03" value="checkbox03">
+                    <label for="checkbox03">Checkbox03</label>
+                    <hr>
+                </div>
+                <div id="radios-section">
+                    <h1>Radios:</h1>
+                    <input type="radio" id="radio01" name = "radios-section" value="radio01">
+                    <label for="radio01">Radio01</label>
+                    <input type="radio" id="radio02" name = "radios-section" value="radio02">
+                    <label for="radio02">Radio02</label>
+                    <input type="radio" id="radio03" name = "radios-section" value="radio03">
+                    <label for="radio03">Radio03</label>
+                    <hr>
+                </div>
+                <div id="dropdowns-section">
+                    <h1>Dropdowns:</h1>
+                    <select name="dropdowns-section">
+                        <option value="default" selected disabled hidden>Default...</option>
+                        <option value ="html">html</option>                    
+                        <option value ="css">css</option>
+                        <option value ="javascript">javascript</option>
+                    </select>
+                    <hr>
+                </div>
+                <div id="autocompletes-section">
+                    <h1>Auto-Completes:</h1>
+                    <input list = "operating-systems" name="os" id="os" placeholder = "Type item...">
+                    <datalist id="operating-systems">
+                        <option value = "Linux"></option>
+                        <option value = "macOS"></option>
+                        <option value="Microsoft Windows"></option>
+                        <option value="iOS"></option>
+                    </datalist>
+                    <hr>
+                </div>
+                <div id="textareas-section">
+                    <h1>Textareas:</h1>
+                    <textarea id="txt-area" placeholder="Type text here..."></textarea>
+                    <hr>
+                </div>
+                <div id="buttons-section">
+                    <h1>Buttons:</h1>
+                    <button type="button"><i class="fa fa-pencil"></i> Button01</button>
+                    <hr>
+                </div>
             </div>
         </form>
+            <div id="second-section">
+                <h1>Bootstrap Booking Form:</h1>
+                <form>
+                    <div class="well well-lg">Fill out the form and click the submit button when complete...</div>
+                    <div class = "col-md-6">
+                        <div class="panel panel-primary" id ="user">
+                            <div class="panel-heading">User:</div>
+                                <div class = "panel-body">
+                                    <div class="form-group">
+                                        <label for="username">Username:</label>
+                                        <input type="text" class="form-control" id="username" placeholder="Type username...">  
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="firstname">First Name:</label>
+                                        <input type="text" class="form-control" id="firstname" placeholder="Type first name...">  
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastname">Last Name:</label>
+                                        <input type="text" class="form-control" id="lastname" placeholder="Type last name...">  
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="panel panel-primary" id="contact">
+                            <div class="panel-heading">Contact:</div>
+                            <div class = "panel-body">
+                                <div class="form-group">
+                                    <label for="username">Username:</label>
+                                    <input type="" class="form-control" id="username" placeholder="Type username...">  
+                                </div>
+                                <div class="form-group">
+                                    <label for="firstname">First Name:</label>
+                                    <input type="text" class="form-control" id="firstname" placeholder="Type first name...">  
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname">Last Name:</label>
+                                    <input type="text" class="form-control" id="lastname" placeholder="Type last name...">  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-primary" id="schedule">
+                            <div class="panel-heading">Schedule:</div>
+                            <div class = "panel-body">
+                                <div class="form-group">
+                                    <label for="username">Username:</label>
+                                    <input type="" class="form-control" id="username" placeholder="Type username...">  
+                                </div>
+                                <div class="form-group">
+                                    <label for="firstname">First Name:</label>
+                                    <input type="text" class="form-control" id="firstname" placeholder="Type first name...">  
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname">Last Name:</label>
+                                    <input type="text" class="form-control" id="lastname" placeholder="Type last name...">  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "col-md-6">
+                        <div class="panel panel-primary" id ="other">
+                            <div class="panel-heading">Other:</div>
+                            <div class = "panel-body">
+                                <div class="form-group">
+                                    <label for="username">Username:</label>
+                                    <input type="" class="form-control" id="username" placeholder="Type username...">  
+                                </div>
+                                <div class="form-group">
+                                    <label for="firstname">First Name:</label>
+                                    <input type="text" class="form-control" id="firstname" placeholder="Type first name...">  
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname">Last Name:</label>
+                                    <input type="text" class="form-control" id="lastname" placeholder="Type last name...">  
+                                </div>
+                            </div>
+                        </div>
+                    </div>                 
+                </form>
+            </div>
+        
         <script src="" async defer></script>
     </body>
 </html>
