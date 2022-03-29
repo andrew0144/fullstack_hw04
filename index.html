@@ -174,10 +174,10 @@
                     <div class="panel-heading">User:</div>
                     <div class="panel-body">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6" >
                                 <label for="username">Username:</label>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6" id="usernameDiv">
                                 <input type="text" class="form-control" id="username" placeholder="Type username...">
                             </div>
                         </div>
@@ -185,7 +185,7 @@
                             <div class="col-md-6">
                                 <label for="firstname">First Name:</label>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6" id="firstnameDiv">
                                 <input type="text" class="form-control" id="firstname" placeholder="Type first name...">
                             </div>
                         </div>
@@ -193,7 +193,7 @@
                             <div class="col-md-6">
                                 <label for="lastname">Last Name:</label>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6" id="lastnameDiv">
                                 <input type="text" class="form-control" id="lastname" placeholder="Type last name...">
                             </div>
                         </div>
@@ -202,26 +202,26 @@
                 <div class="panel panel-primary" id="contact">
                     <div class="panel-heading">Contact:</div>
                     <div class="panel-body">
-                        <div class="input-group">
-                            <div class="input-group-prepend input-group-addon">
+                        <div class="input-group" id="phoneDiv">
+                            <div class="input-group-prepend input-group-addon" >
                                 <span id="basic-addon1"><i class="fa fa-phone" style="font-size: 1.3em;"
                                         aria-hidden="true"></i></span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Type phone#..."
+                            <input type="text" id="phone" class="form-control" placeholder="Type phone#..."
                                 aria-label="Input group example" aria-describedby="basic-addon1">
                         </div>
-                        <div class="input-group">
-                            <div class="input-group-prepend input-group-addon">
+                        <div class="input-group" id="faxDiv">
+                            <div class="input-group-prepend input-group-addon" >
                                 <span id="basic-addon1"><i class="fa fa-fax" aria-hidden="true"></i></span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Type Fax#..."
+                            <input type="text" id="fax" class="form-control" placeholder="Type Fax#..."
                                 aria-label="Input group example" aria-describedby="basic-addon1">
                         </div>
-                        <div class="input-group">
+                        <div class="input-group" id="emailDiv">
                             <div class="input-group-prepend input-group-addon">
                                 <span id="basic-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Type e-mail..."
+                            <input type="text" id="email" class="form-control" placeholder="Type e-mail..."
                                 aria-label="Input group example" aria-describedby="basic-addon1">
                         </div>
                     </div>
