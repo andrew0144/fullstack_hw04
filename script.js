@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-    var cost = -1;
+    var cost;
     $("#check-in, #check-out, #adults").change(function(){
         var checkin = new Date($("#check-in").val());
         var checkout = new Date($("#check-out").val());
@@ -20,14 +20,28 @@ $(document).ready(function(){
     });
     
     $("#submit-button").click(function(){
-        $.fn.validateCost();
-        
+        if($.fn.validateCost()=== false) return;
+        $.fn.validateEntries();
+
+        toastr["success"]("Successfully Submitted!", "", {"positionClass": "toast-bottom-right"});
     });
 
     $.fn.validateCost = function(){
-        console.log(typeof cost);
-        if($("#cost").val() != false && cost >= 0) return;
+        if($("#cost").val() != false && cost > 0) return;
         else
-            toastr["error"]("No cost was calculated. Please fill out the whole form.", "", {"positionClass": "toast-bottom-right"})
+            if(cost < 0){
+                toastr["error"]("Cost was negative", "", {"positionClass": "toast-bottom-right"});
+                return false;
+            }
+            if(cost === 0){
+                toastr["error"]("Cost was zero", "", {"positionClass": "toast-bottom-right"});
+                return false;
+            }
+             toastr["error"]("No cost was calculated. Please fill out the whole form.", "", {"positionClass": "toast-bottom-right"});
+             return true;
+    }
+
+    $.fn.validateEntries = function(){
+        
     }
   });
